@@ -58,8 +58,7 @@ upstream/emscripten/emcc --generate-config
 
 - Get the full path of the current working directory:
 
-```pwd
-```
+```pwd```
 
 - Copy the output to the clipboard (usually, you can do this from the terminal by selecting with mouse + Ctrl+Alt+C)
 
@@ -79,8 +78,7 @@ upstream/emscripten/emcc --generate-config
 
 - Go to Raylib's source directory
 
-```cd ../raylib/src
-```
+```cd ../raylib/src```
 
 - Open Makefile on a text editor
 
@@ -112,8 +110,7 @@ $(Clone and build)
 
 8) Test using a local back-end:
 
-```python -m http.server 8080 --directory ../out
-```
+```python -m http.server 8080 --directory ../out```
 
 PS: If "make clean" doesn't work, change "RM" in the game's Makefile to Windows' rm
 
