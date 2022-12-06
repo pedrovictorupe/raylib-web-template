@@ -1,8 +1,23 @@
 {
     "configurations": [
         {
-            "name": "Default",
-            "configurationProvider": "ms-vscode.makefile-tools"
+            "name": "Mac",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "../raylib/src",
+                "../emsdk/upstream/emscripten/cache/sysroot/include"
+            ],
+            "defines": [
+                "PLATFORM_WEB",
+                "__EMSCRIPTEN__"
+            ],
+            "macFrameworkPath": [
+                "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks"
+            ],
+            "compilerPath": "/usr/bin/clang",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "macos-clang-x64"
         }
     ],
     "version": 4
